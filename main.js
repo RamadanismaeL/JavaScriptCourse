@@ -21,3 +21,10 @@ let userDetails = { firstName: 'John', lastName: 'Doe', age: 62, isMarried: fals
 
 let userName = 'user1'
 userName = 'user2'
+
+// Addition Operator
+let num1 = 10
+let num2 = 5
+
+let sum = num1+num2
+console.log(sum)
