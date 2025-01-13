@@ -24,7 +24,7 @@ userName = 'user2'
 
 
 /*
-Operatores
+! OPERATORS
 ==      ->      equal to
 ===     ->      equal value and equal type (string)
 !=      ->      not equal
@@ -39,10 +39,12 @@ Operatores
 
 let num1 = 10
 let num2 = 5
+let num3 = '7'
 
 // Addition Operator (+)
 let sum = num1+num2
 console.log(sum)
+console.log(sum+num3)
 
 // Substraction Operator (-)
 console.log(num1 - num2)
@@ -65,3 +67,51 @@ console.log(equals)
 
 // notEqualsTo Operator (!=)
 console.log(num1 != num2)
+
+// strict EqualsTo Operator (===)
+console.log(num1 === num2)
+a = 'a'
+b = 'b'
+console.log(a === b)
+console.log(num1 === b)
+
+console.log(num1 !== b)
+
+// GreaterThan Operator (>)
+console.log(num1 > num2)
+console.log(num1 > 10)
+
+// GreaterThan Operator or EqualsTo Operator (>=)
+console.log(num1 >= num2)
+console.log(num1 >= 10)
+
+// LessThan Operator (<)
+console.log(num1 < num2)
+console.log(num1 < 5)
+
+// LessThan or EqualsTo Operator (<=)
+console.log(num2 <= num1)
+console.log(num1 <= 8)
+
+// unicode
+console.log('=============================')
+let unicode = 'A'
+console.log(unicode.charCodeAt())
+let unicode2 = 'a'
+console.log(unicode2.charCodeAt())
+
+/*
+! LOGICAL OPERATORS
+- Logical AND operator, symbol is   &&
+- Logical OR operator, symbol is    ||
+- Logical NOT operator, symbol is   !
+
+! SINTAX
+condition ? expression1 : expression2
+*/
+let back = (age >= 18) ? "Can back" : "Can not back"
+console.log(back)
+
+let personType = 'student'
+let isEligible = personType == 'student' && age > 23
+console.log(isEligible)
