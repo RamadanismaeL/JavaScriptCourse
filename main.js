@@ -23,6 +23,20 @@ let userName = 'user1'
 userName = 'user2'
 
 
+/*
+Operatores
+==      ->      equal to
+===     ->      equal value and equal type (string)
+!=      ->      not equal
+!==     ->      not equal value or not equal type (string)
+>       ->      greater than
+<       ->      less than
+>=      ->      greater than or equal to
+<=      ->      less than or equal to
+?       ->      ternary operator
+*/
+
+
 let num1 = 10
 let num2 = 5
 
