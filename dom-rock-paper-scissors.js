@@ -52,7 +52,11 @@ function playGameLocal(playerMode)
 
     document.querySelector('.js-result').innerHTML = resultLocal
 
-    document.querySelector('.js-moves').innerHTML = `You ${playerMode} -- ${computerMoveLocal} Computer.`
+    document.querySelector('.js-moves').innerHTML =
+        `You
+        <img src="./${playerMode}-emoji.png" alt="">
+        <img src="./${computerMoveLocal}-emoji.png" alt="">
+        Computer`
 
     updateScoreElement()
 }
@@ -74,9 +78,4 @@ function resetLocal()
     document.querySelector('.js-moves').innerHTML = null
 
     alert(`Cleared Successfuly\nWins: ${scoreLocal.wins}, Losses: ${scoreLocal.losses}, Ties: ${scoreLocal.ties}`)
-}
-
-function showResult()
-{
-    alert(`SHOW RESULTS\n${localStorage.getItem('scoreLocal')}`)
 }
