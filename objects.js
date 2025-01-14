@@ -83,3 +83,26 @@ function resetObject()
 
     alert(`Cleared Successfuly\nWins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`)
 }
+
+const product2 =
+{
+    names: 'shirt',
+    ['delivery-time']: '1 day',
+    rating: {
+        starts: 4.5,
+        count: 87
+    },
+    fun: function function1() { console.log('function inside object') }
+};
+console.log(product2)
+console.log(product2.names)
+console.log(product2['names'])
+console.log(product2['delivery-time'])
+console.log(product2.rating)
+console.log(product2.rating.starts)
+product2.fun()
+
+console.log(typeof console.log)
+
+// Object + function = Method
+// JSON = JavaScript Object Notation
