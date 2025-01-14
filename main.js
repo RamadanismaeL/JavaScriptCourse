@@ -1,7 +1,15 @@
 function welcomeMessage()
 {
     alert('Welcome to the WebSite')
+    alert('Items ('+(1+1)+'): $ '+(2095+799)/100)
+    prompt('What\'s your name?')
 }
+
+console.log('Hello Friend')
+console.log(`Hello Friend`)
+console.log("Hello Friend")
+console.log("I'm")
+console.log('I\'m')
 
 var firstName = 'John'
 
@@ -99,7 +107,22 @@ let unicode = 'A'
 console.log(unicode.charCodeAt())
 let unicode2 = 'a'
 console.log(unicode2.charCodeAt())
+console.log('-===========================')
 
+console.log(0.1 + 0.2)
+console.log((1+2)/10)
+console.log(20.95+7.99)
+console.log((2095+799)/100)
+
+console.log(Math.round(2.4))
+console.log(Math.round(2.8))
+
+console.log(typeof 2)
+console.log(typeof '2')
+console.log(typeof [2])
+console.log('$' +20.95+7.99)
+console.log('$'+(2095+799)/100)
+console.log('$'+Math.round(20.95+7.99))
 /*
 ! LOGICAL OPERATORS
 - Logical AND operator, symbol is   &&
@@ -115,3 +138,17 @@ console.log(back)
 let personType = 'student'
 let isEligible = personType == 'student' && age > 23
 console.log(isEligible)
+
+// Msgm
+//Error Message
+console.error('This is a Error Message')
+
+//Warnning Message
+console.warn('This is a Warnning Message')
+
+//Information Message
+console.info('This is a information Message')
+
+console.log('Items (${1 + 1})')
+console.log(`Items (${1 + 1})`)
+console.log(`Items (${1 + 1}): $${(2095 + 799)/100}`)

@@ -17,5 +17,30 @@
     </script>
     -->
     <script src="./main.js"></script>
+
+
+    <button style="height: 4rem; font-size: 12pt; padding: 25px; margin-right: 5px;"
+    onclick="console.log(`Cart Quantity: ${cartQuantity}`)"
+    >Show Quantity</button>
+    <button style="height: 4rem; font-size: 12pt; padding: 25px; margin-right: 5px"
+    onclick="console.log(`${cartQuantity}`); add()"
+    >Add to Cart</button>
+    <button style="height: 4rem; font-size: 12pt; padding: 25px; margin-right: 5px"
+    onclick="cartQuantity += 2; console.log(`+2 Card = ${cartQuantity}`)"
+    >+2</button>
+    <button style="height: 4rem; font-size: 12pt; padding: 25px; margin-right: 5px"
+    onclick="cartQuantity +=3; console.log(`+3 Card = ${cartQuantity}`)"
+    >+3</button>
+    <button style="height: 4rem; font-size: 12pt; padding: 25px;"
+    onclick="cartQuantity = 0; console.log('Cart was reset.'); console.log(`Cart Quantity: ${cartQuantity}`)"
+    >Reset Cart</button>
+
+    <script>
+        let cartQuantity = 0;
+
+        function add() {
+            cartQuantity++;
+        }
+    </script>
 </body>
 </html>
