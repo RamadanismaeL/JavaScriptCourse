@@ -54,8 +54,8 @@ function playGameLocal(playerMode)
 
     document.querySelector('.js-moves').innerHTML =
         `You
-        <img src="./${playerMode}-emoji.png" alt="">
-        <img src="./${computerMoveLocal}-emoji.png" alt="">
+        <img src="./images/${playerMode}-emoji.png" alt="">
+        <img src="./images/${computerMoveLocal}-emoji.png" alt="">
         Computer`
 
     updateScoreElement()
