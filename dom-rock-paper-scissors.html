@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom-game</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <button onclick="playGameLocal('rock')">Rock</button>
+    <button onclick="playGameLocal('paper')">Paper</button>
+    <button onclick="playGameLocal('scissors')">Scissors</button>
+    <button onclick="showResult()">Show Result</button>
+
+    <p class="js-result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score"></p>
+    <button onclick="resetLocal()">Reset Score</button>
+
+    <script src="./dom-rock-paper-scissors.js"></script>
+</body>
+</html>
