@@ -66,3 +66,5 @@ console.log('25' + 5) // string result = 255
 window.document
 window.console.log('window')
 window.alert('Hello friends')
+
+//6:38:51
