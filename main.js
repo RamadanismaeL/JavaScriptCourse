@@ -1,7 +1,12 @@
 function welcomeMessage()
 {
+    alert('JavaScript Tutorial Full Course')
     alert('Welcome to the WebSite')
     alert('Items ('+(1+1)+'): $ '+(2095+799)/100)
+}
+
+function input()
+{
     prompt('What\'s your name?')
 }
 
@@ -152,3 +157,39 @@ console.info('This is a information Message')
 console.log('Items (${1 + 1})')
 console.log(`Items (${1 + 1})`)
 console.log(`Items (${1 + 1}): $${(2095 + 799)/100}`)
+
+/*
+! FALSY VALUE
+false      0       ''     NaN      undefined       null
+*/
+console.log('')
+console.log(false)
+console.log(!0)
+console.log(undefined)
+console.log(null)
+console.log('')
+
+const resul = 0? 'truthy' : 'falsy'
+console.log(resul)
+
+false && console.log('hello')
+
+const message = false && 'hello';
+console.log(message)
+
+console.log('')
+
+/*
+! Rules for function names:
+1. Can't use special words
+2. Can't start with a number
+3. Can't use special characters (!@#$%^&......)
+*/
+function function1()
+{
+    console.log('hello')
+    console.log(2+2)
+}
+
+function1();
+function1();
