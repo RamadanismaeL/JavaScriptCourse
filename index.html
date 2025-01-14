@@ -5,6 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Full Course</title>
+    <style>
+        .subscribe-button
+        {
+            border: none;
+            background-color: black;
+            color: #fff;
+            padding: 15px 25px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 11pt;
+            margin-bottom: 30px;
+        }
+        .is-subscribed
+        {
+            background-color: rgb(240, 240, 240);
+            color: black;
+        }
+
+        .cost-input
+        {
+            font-size: 14pt;
+            padding: 10px;
+        }
+
+        .calculate-button
+        {
+            background-color: green;
+            border: none;
+            color: #fff;
+            font-size: 15px;
+            padding: 14px 15px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <button onclick="welcomeMessage()">Show Alert Message</button>
@@ -156,21 +191,21 @@
     <button style="height: 4rem; font-size: 12pt; width: 9rem; margin-right: 5px;" class="js-button">Second button</button>
     <h1 style="margin-top: 45px; margin-bottom: 45px;">--------------------------</h1>
 
-    <p>Youtube Subscribe Button</p>
-    <button class="js-subscribe-button" onclick="btnSubscribe()">Subscribe</button>
+    <p style="font-size: 14pt;">Youtube Subscribe Button</p>
+    <button class="js-subscribe-button subscribe-button" onclick="btnSubscribe()">Subscribe</button>
 
-    <p>Amazon Shipping Calculator</p>
+    <p style="font-size: 14pt;">Amazon Shipping Calculator</p>
     <!--
     <input type="text" placeholder="Cost of order" class="js-cost-input"
     onkeydown="/*console.log('typing')*/ console.log(event.key)
     if(event.key === 'Enter') { btnCalculateTotal() }"
     >
     -->
-    <input type="text" placeholder="Cost of order" class="js-cost-input"
+    <input type="text" placeholder="Cost of order" class="js-cost-input cost-input"
     onkeydown="handleCostKeyDown(event)"
     >
-    <button onclick="btnCalculateTotal()">Calculate</button>
-    <p class="js-total-cost"></p>
+    <button onclick="btnCalculateTotal()" class="calculate-button">Calculate</button>
+    <p class="js-total-cost" style="font-size: 14pt;"></p>
 
     <!-- EVENT LISTENERS
      ! onlick       = click

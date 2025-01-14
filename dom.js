@@ -30,8 +30,17 @@ function btnSubscribe()
 {
     const btnSubscrElement = document.querySelector('.js-subscribe-button')
     //console.log(btn)
-    if(btnSubscrElement.innerText === 'Subscribe' ) { btnSubscrElement.innerHTML = 'Subscribed' }
-    else { btnSubscrElement.innerHTML = 'Subscribe' }
+    if(btnSubscrElement.innerText === 'Subscribe' )
+    {
+        btnSubscrElement.innerHTML = 'Subscribed'
+        btnSubscrElement.classList.add('is-subscribed')
+    }
+    else
+    {
+        btnSubscrElement.innerHTML = 'Subscribe'
+        btnSubscrElement.classList.remove('is-subscribed')
+    }
+
 }
 //btnSubscribe()
 
@@ -65,6 +74,4 @@ console.log('25' + 5) // string result = 255
 
 window.document
 window.console.log('window')
-window.alert('Hello friends')
-
-//6:38:51
+//window.alert('Hello friends')
